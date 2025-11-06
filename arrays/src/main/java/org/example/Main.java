@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         int[] numbers; // declaration
         numbers = new int[3]; // allocation
+        numbers[0] = 45;
 
         int[] primes = new int[4]; // declaration + allocation
         primes[1] = 99;
