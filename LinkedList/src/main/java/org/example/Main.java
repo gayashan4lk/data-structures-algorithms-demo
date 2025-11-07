@@ -14,10 +14,21 @@ public class Main {
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String startJson = gson.toJson(start);
-        System.out.println(startJson);
+//        System.out.println(startJson);
 
-//        LinkedList myList = new LinkedList();
-//        System.out.println(myList.head);
+        LinkedList myList = new LinkedList();
+        myList.insert(11);
+        myList.insert(22);
+        myList.insert(33);
+        myList.insert(44);
+        myList.insert(55);
+
+        myList.delete(55);
+
+        String myListJson = gson.toJson(myList);
+        System.out.println(myListJson);
+
+//        myList.transverse();
     }
 }
 
