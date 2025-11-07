@@ -1,7 +1,7 @@
 package org.example;
 
 public class LinkedList{
-    Node head;
+    private Node head;
 
     public void insert(int data){
         Node newNode = new Node(data);
@@ -33,12 +33,12 @@ public class LinkedList{
         }
     }
 
-    public void transverse(){
+    public void traverse(){
         var current = head;
 
-        do {
+        while (current != null) {
             System.out.println(current.data);
             current = current.next;
-        } while (current.data != 0);
+        }
     }
 }

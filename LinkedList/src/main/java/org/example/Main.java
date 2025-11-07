@@ -23,12 +23,12 @@ public class Main {
         myList.insert(44);
         myList.insert(55);
 
-        myList.delete(55);
+//        myList.delete(55);
 
         String myListJson = gson.toJson(myList);
         System.out.println(myListJson);
 
-//        myList.transverse();
+        myList.traverse();
     }
 }
 
